@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       h1{
+            text-align: center;
+            font-size: 100px;
+            color:rgb(10, 10, 10)
+        }
+        input{
+            height: 30px;
+            justify-content: center;
+            text-align: center;
+            width:30%;
+            margin-left: 37% ;
+            border-radius: 20px;
+        }
+        .jupiter{
+        width:250px;
+        height:250px;
+        border-radius: 10%;
+        margin-left:2%;
+        }
+        .uranus{
+        width:250px;
+        height:250px;  
+        border-radius: 10%; 
+        margin-left:2%;
+        }
+        .saturn{
+        width:250px;
+        height:250px;  
+        margin-left:2%;
+        border-radius: 10%; 
+    }
+    .Earth{
+        width:250px;
+        height:250px;
+        border-radius: 10%; 
+    }
+    .neptune{
+        border-radius:10%;
+        margin-left: 2%;
+        width:250px;
+        height:250px;
+    }
+    
+    
+    .mercury{
+        border-radius:10%;
+        margin-left: 2%;
+        width:250px;
+        height:250px;
+    }
+    .mars{
+        border-radius:10%;
+        margin-left: 2%;
+        width:250px;
+        height:250px;
+    }
+    
+    .venus{
+        border-radius:10%;
+        width:250px;
+        height:250px;
+    }
+    
+    .container{
+        margin-left: 140px;
+        word-spacing:20%;
+    }
+   .div{
+        border-spacing: 30px;
+        
+    }
+    #p{
+        justify-content: center;
+        text-align: center;
+        color: azure;
+        font-size: 20px;
+    }
+
+* {
+    margin:0;
+    padding:0;
+}
+body{
+    /* background-image:url("background.jpg"); */
+    background-color: rgb(112, 41, 41);
+    background-repeat:no-repeat;
+    background-size: cover;
+    height:100vh;
+}
+</style>
+</head>
+<body>
+
+<div class  = "background-image"></div>
+</div>
+
+ <h1>Enter the weight of Object </h1>
+<input type= "text" id="inp" placeholder="Enter weight" ><br><br><br>
+    <p id="p"></p>
+<div class = "container">
+    <img class = "Earth" src = "Earth.jpg" onclick="earth()">
+    <img class = "neptune" src = "neptune.jpg" onclick="neptune()"  >
+    <img class = "mercury" src = "mercury.jpg" onclick="mercury()" >
+    <img class = "mars" src = "mars.jpg"   onclick="mars()" >
+</div>
+<div class="container">
+    <img class = "venus" src = "venus.jpg" onclick="venus()"  >
+    <img class = "jupiter" src = "jupiter.jpg" onclick="jupiter()">
+    <img class = "uranus" src = "uranus.jpg"  onclick="uranus()" >
+    <img class = "saturn" src = "saturn.jpg" onclick="saturn()">
+</div>  
+</div>
+<script>
+
+ function earth(){
+            var a=document.getElementById("inp").value;
+            a=parseInt(a);
+            if(!isNaN(a)) document.getElementById("p").innerHTML="The Weight of Object on Earth is : "+a;
+            else alert("Please Enter a Valid Weight");
+        }
+        function neptune(){
+            var a=document.getElementById("inp").value;
+            a=parseInt(a);
+            if(!isNaN(a)) document.getElementById("p").innerHTML="The Weight of Object on Neptune is : "+Math.round(a*1.19);
+            else alert("Please Enter a Valid Weight");
+        }
+        function mercury(){
+            var a=document.getElementById("inp").value;
+            a=parseInt(a);
+            if(!isNaN(a)) document.getElementById("p").innerHTML="The Weight of Object on Mercury is : "+Math.round(a*0.38);
+            else alert("Please Enter a Valid Weight");
+        }
+        function mars(){
+            var a=document.getElementById("inp").value;
+            a=parseInt(a);
+            if(!isNaN(a)) document.getElementById("p").innerHTML="The Weight of Object on Mars is : "+Math.round(a*0.38);
+            else alert("Please Enter a Valid Weight");
+        }
+        function venus(){
+            var a=document.getElementById("inp").value;
+            a=parseInt(a);
+            if(!isNaN(a)) document.getElementById("p").innerHTML="The Weight of Object on Venus is : "+Math.round(a*0.91);
+            else alert("Please Enter a Valid Weight");
+        }
+       
+        function jupiter(){
+            var a=document.getElementById("inp").value;
+            a=parseInt(a);
+            if(!isNaN(a)) document.getElementById("p").innerHTML="The Weight of Object on Jupiter is : "+Math.round(a*2.34);
+            else alert("Please Enter a Valid Weight");
+        }
+        function uranus(){
+            var a=document.getElementById("inp").value;
+            a=parseInt(a);
+            if(!isNaN(a)) document.getElementById("p").innerHTML="The Weight of Object on Uranus is : "+Math.round(a*0.92);
+            else alert("Please Enter a Valid Weight");
+        }
+        function saturn(){
+            var a=document.getElementById("inp").value;
+            a=parseInt(a);
+            if(!isNaN(a)) document.getElementById("p").innerHTML="The Weight of Object on Satrun is : "+Math.round(a*1.06);
+            else alert("Please Enter a Valid Weight");
+    }
+       
+
+</script>
+</body>`
+</html>
